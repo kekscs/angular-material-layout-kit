@@ -1,0 +1,10 @@
+$a-container--1280-width: 1280px !default;
+
+//a-container
+.a-c {
+  &--1280 {
+		max-width: $a-container--1280-width;
+		margin-left: auto;
+		margin-right: auto;
+  }
+}

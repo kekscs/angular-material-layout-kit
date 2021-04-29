@@ -1,0 +1,76 @@
+@use './theme-vars' as *;
+
+// Fonts
+@mixin core-styles {
+  @import 'https://fonts.googleapis.com/css?family=Material+Icons';
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+  // Compute font config
+  @include mat-core($fontConfig);
+
+  // Theme Config
+
+  body {
+    --primary-color: #344955;
+    --primary-lighter-color: #4a6572;
+    --primary-darker-color: #232f34;
+    --text-primary-color: #{$light-primary-text};
+    --text-primary-lighter-color: #{$light-primary-text};
+    --text-primary-darker-color: #{$light-primary-text};
+  }
+
+  body {
+    --accent-color: #f9aa33;
+    --accent-lighter-color: #fde6c2;
+    --accent-darker-color: #f69020;
+    --text-accent-color: #{$dark-primary-text};
+    --text-accent-lighter-color: #{$dark-primary-text};
+    --text-accent-darker-color: #{$dark-primary-text};
+  }
+
+  body {
+    --warn-color: #ff0000;
+    --warn-lighter-color: #ffb3b3;
+    --warn-darker-color: #ff0000;
+    --text-warn-color: #{$light-primary-text};
+    --text-warn-lighter-color: #{$dark-primary-text};
+    --text-warn-darker-color: #{$light-primary-text};
+  }
+
+  // Theme Init
+  @include angular-material-theme($theme);
+
+  .theme-alternate {
+    @include angular-material-theme($altTheme);
+  }
+
+  // Specific component overrides, pieces that are not in line with the general theming
+
+  // Handle buttons appropriately, with respect to line-height
+  .mat-raised-button, .mat-stroked-button, .mat-flat-button {
+    padding: 0 1.15em;
+    margin: 0 .65em;
+    min-width: 3em;
+    line-height: 36.4px
+  }
+
+  .mat-standard-chip {
+    padding: .5em .85em;
+    min-height: 2.5em;
+  }
+
+  .material-icons {
+    font-size: 24px;
+    font-family: 'Material Icons', 'Material Icons';
+    .mat-badge-content {
+      font-family: 'Roboto';
+    }
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+@use './material-angular/theme' as mat-theme;
+@forward './material-angular/theme-vars' as mat-*;
+
+@use './mdc/theme';
+
+
+@mixin core-styles {
+  @include mat-theme.core-styles;
+}
+
