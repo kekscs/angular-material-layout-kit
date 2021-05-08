@@ -8,6 +8,7 @@ import { Layout101Component } from "./layouts/layout101/layout101.component";
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
+import { DummyContentComponent } from "./pages/dummy-content/dummy-content.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,13 @@ const routes: Routes = [
     pathMatch: 'full',
     children: [
       { path: '', component: HomeComponent }
+    ]
+  },
+  {
+    path: 'layout101',
+    component: Layout101Component,
+    children: [
+      { path: '', component: DummyContentComponent }
     ]
   }
 ];
