@@ -1,0 +1,11 @@
+@mixin core-styles() {
+  .pseudo-paragraph {
+    .pseudo-title:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    .pseudo-text-line:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -225,6 +225,13 @@
   dependencies:
     tslib "^2.0.0"
 
+"@angular/flex-layout@^11.0.0-beta.33":
+  version "11.0.0-beta.33"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-11.0.0-beta.33.tgz#c2d08f90164701b66a62b8c4365b4e22c1e95789"
+  integrity sha512-unfhw3abZuKtdwQicRStHCYGbANPTHYg4WNRQk/RC5Mxq+4WOp4Q8HI7GqRHCGUYDCGUP7w1sU/oDt8f09nM8w==
+  dependencies:
+    tslib "^2.0.0"
+
 "@angular/forms@~11.2.9":
   version "11.2.9"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-11.2.9.tgz#127a62f99e354210f0882d30e268c69b7c5e6c4f"
@@ -6172,10 +6179,10 @@ md5.js@^1.3.4:
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
 
-mdc-utility-styles@0.1.0-alpha.2:
-  version "0.1.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/mdc-utility-styles/-/mdc-utility-styles-0.1.0-alpha.2.tgz#198db6a52488dc1ef9ee435402d4ecc4e6ef96b6"
-  integrity sha512-7Xw6Fm1IV0ZcO3emqI5n6GO8/fGDjXwDxs5RT9NjD/fS31K+FspBQ4Yn7SvM0fk4B9/JOvGRJHJ89mDR3LkK+Q==
+mdc-utility-styles@0.1.0-alpha.3:
+  version "0.1.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/mdc-utility-styles/-/mdc-utility-styles-0.1.0-alpha.3.tgz#f9868bd90a37e5b7b6901730407788594329c60c"
+  integrity sha512-nllos79lYbpRPHjzpPsrN0QXQWKCriPBXXrOIh3SvfTUm4GUTraPM5c0NnCnuwMvloCVcZQrnY3WNzCoeuApRQ==
 
 mdn-data@2.0.14:
   version "2.0.14"

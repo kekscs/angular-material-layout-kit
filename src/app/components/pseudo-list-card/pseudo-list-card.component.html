@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-content>
+    <div class="mdx-pt--1-desktop mdx-pb--2-phone">
+      <div class="mdx-d--grid-tablet" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px;">
+        <div *ngFor="let i of [].constructor(12)"
+          class="mdx-d--flex mdx-py--1 mdx-border--bottom-desktop-tmp mdx-border--top-tablet"
+          [ngClass]="{ 'mdx-border--top': i == 0,
+                    'mdx-d--none-phone': i != 0,
+                    'mdx-d--none-tablet': i > 2 }">
+          <div class="mdx-flex-grow--1 mdx-pr--2">
+            <div class="pseudo-text-line"></div>
+          </div>
+          <div class="avatar">
+            <pseudo-avatar></pseudo-avatar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+
+<!-- <div class="mdc-card">
+  <div class="mdc-card__content">
+    <div class="dashboard-card__header">
+      <div class="dashboard-card__headline">Alerts</div>
+      <div class="mdx-d--flex mdx-align-items--center">
+        <div class="mdx-d--none-desktop">
+          <button class="mdc-button">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">See All</span>
+          </button>
+        </div>
+        <div>
+          <button class="material-icons mdc-icon-button">more_vert</button>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-card-table mdx-pt--1-desktop mdx-pb--2-phone">
+      <div class="mdx-d--grid-tablet" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px;">
+        <div v-for="(alert, index) in alerts" :key="index"
+          class="mdx-d--flex mdc-typography--body2 mdx-py--1 mdx-border--bottom-desktop mdx-border--top-tablet"
+          :class="{ 'mdx-border--top': index == 0,
+                    'mdx-d--none-phone': index != 0,
+                    'mdx-d--none-tablet': index > 2 }">
+          <div class="mdx-flex-grow--1 mdx-pr--2 mdx-theme--on-surface-high">{{ alert.text }}</div>
+          <div class="mdx-theme--on-surface-medium">
+            <span class="material-icons">{{ alert.icon }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-card-table__more mdx-d--none-phone mdx-d--none-tablet">
+        <button class="mdc-button">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">See All</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div> -->
+

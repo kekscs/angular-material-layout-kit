@@ -1,10 +1,3 @@
-.container {
-  max-width: 400px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .dummy-text {
 
   //height: 20px;
@@ -21,25 +14,7 @@
   }
 }
 
-%pseudo-text {
-  display: inline-block;
-  background-color: #E7E7E7;
-  width: 100%;
-  border-radius: 3px;
-}
-
-.pseudo-title {
-  @extend %pseudo-text;
-  height: 24px;
-}
-
-.pseudo-text-line {
-  @extend %pseudo-text;
-  height: 14px;
-}
-
-::ng-deep .pseudo-paragraph {
-  ::ng-deep .pseudo-text-line {
-    margin-bottom: 15px;
-  }
+.pseudo-post {
+  margin: 24px auto;
+  max-width: 640px;
 }
