@@ -16,7 +16,8 @@ $fontConfig: (
   //body-1: mat-typography-level(14px, 20px, 400, 'Roboto', 0.0179em),
   body-1: mat-typography-level(18px, 26px, 400, '\'Work Sans\', sans-serif'),
   button: mat-typography-level(14px, 14px, 500, 'Roboto', 0.0893em),
-  caption: mat-typography-level(12px, 20px, 400, 'Roboto', 0.0333em),
+  //caption: mat-typography-level(12px, 20px, 400, 'Roboto', 0.0333em),
+  caption: mat-typography-level(12px, 20px, 400, '\'Work Sans\', sans-serif'),
   input: mat-typography-level(inherit, 1.125, 400, 'Roboto', 1.5px)
 );
 
