@@ -1,8 +1,16 @@
 <header #topAppBarEl class="mdc-top-app-bar mdc-elevation--z3">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <a to="/" class="mdc-top-app-bar__title mdc-top-app-bar__title--first">
-        <span class="">Material Design</span> Layout Kit
+      <!-- <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button> -->
+
+      <a mat-icon-button
+        routerLink="/"
+        class="mdc-top-app-bar__action-item mdc-top-app-bar__navigation-icon">
+        <mat-icon>arrow_back</mat-icon>
+      </a>
+
+      <a class="mdc-top-app-bar__title mdc-top-app-bar__title--first">
+        <span class="mdx-d--none-phone">Material Design</span> Layout Kit
       </a>
     </section>
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
@@ -10,10 +18,30 @@
       <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button> -->
 
       <a mat-icon-button
-        href="https://github.com/kekscs/vue-material-layout-kit"
         class="mdc-top-app-bar__action-item">
-        <mat-icon svgIcon="github"></mat-icon>
+        <mat-icon>favorite</mat-icon>
       </a>
+
+      <a mat-icon-button
+        class="mdc-top-app-bar__action-item">
+        <mat-icon>search</mat-icon>
+      </a>
+
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="moreMenu"
+        class="mdc-top-app-bar__action-item">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+      <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+      <mat-menu #moreMenu="matMenu">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Send Feedback</button>
+        <button mat-menu-item>Help</button>
+        <button mat-menu-item>Terms of service</button>
+        <button mat-menu-item>Privacy policy</button>
+      </mat-menu>
 
       <!-- <div id="demo-menu" class="mdc-menu-surface--anchor">
         <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
