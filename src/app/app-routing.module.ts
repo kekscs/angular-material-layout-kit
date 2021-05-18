@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Layouts
 import { AppLayoutComponent } from "./layouts/app-layout/app-layout.component";
 import { Layout101Component } from "./layouts/layout101/layout101.component";
+import { Layout203Component } from "./layouts/layout203/layout203.component";
 
 
 // Pages
@@ -22,6 +23,13 @@ const routes: Routes = [
   {
     path: 'layout101',
     component: Layout101Component,
+    children: [
+      { path: '', component: DummyContentComponent }
+    ]
+  },
+  {
+    path: 'layout203',
+    component: Layout203Component,
     children: [
       { path: '', component: DummyContentComponent }
     ]

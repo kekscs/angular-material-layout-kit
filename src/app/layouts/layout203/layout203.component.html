@@ -1,0 +1,72 @@
+<div class="layout-container">
+  <header
+    #topAppBarEl
+    [class.mdc-top-app-bar--fixed]="!mobileQuery.matches"
+    class="mdc-top-app-bar mdc-elevation--z3">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button
+          mat-icon-button
+          (click)="snav.toggle()"
+          class="mdc-top-app-bar__navigation-icon mdx-d--none-desktop">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="mdc-top-app-bar__title">Material Design Layout Kit</span>
+      </section>
+
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <a mat-icon-button
+          class="mdc-top-app-bar__action-item">
+          <mat-icon>favorite</mat-icon>
+        </a>
+
+        <a mat-icon-button
+          class="mdc-top-app-bar__action-item">
+          <mat-icon>search</mat-icon>
+        </a>
+
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="moreMenu"
+          class="mdc-top-app-bar__action-item">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+        <mat-menu #moreMenu="matMenu">
+          <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Send Feedback</button>
+          <button mat-menu-item>Help</button>
+          <button mat-menu-item>Terms of service</button>
+          <button mat-menu-item>Privacy policy</button>
+        </mat-menu>
+      </section>
+    </div>
+  </header>
+  <!-- <div class="mdc-top-app-bar--fixed-adjust"> -->
+    <mat-sidenav-container
+      class="example-sidenav-container"
+      [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches">
+      <mat-sidenav
+        #snav
+        [mode]="mobileQuery.matches ? 'over' : 'side'"
+        [style.marginTop.px]="mobileQuery.matches ? null : 64"
+        [fixedInViewport]="mobileQuery.matches"
+        [opened]="!mobileQuery.matches"
+        [fixedTopGap]="phoneQuery.matches ? 56 : 64">
+        <div *ngFor="let nav of fillerNav">
+          <a routerLink=".">{{nav}}</a>
+        </div>
+      </mat-sidenav>
+
+      <mat-sidenav-content #snavContent
+        [class.mdc-top-app-bar--fixed-adjust]="mobileQuery.matches">
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  <!-- </div> -->
+
+</div>
+
+
