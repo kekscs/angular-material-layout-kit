@@ -44,15 +44,14 @@
   </header>
   <!-- <div class="mdc-top-app-bar--fixed-adjust"> -->
     <mat-sidenav-container
-      class="example-sidenav-container"
-      [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches">
+      [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches"
+      [class.sidenav-container--modal-drawer]="mobileQuery.matches">
       <mat-sidenav
         #snav
         [mode]="mobileQuery.matches ? 'over' : 'side'"
         [style.marginTop.px]="mobileQuery.matches ? null : 64"
         [fixedInViewport]="mobileQuery.matches"
-        [opened]="!mobileQuery.matches"
-        [fixedTopGap]="phoneQuery.matches ? 56 : 64">
+        [opened]="!mobileQuery.matches">
         <div *ngFor="let nav of fillerNav">
           <a routerLink=".">{{nav}}</a>
         </div>

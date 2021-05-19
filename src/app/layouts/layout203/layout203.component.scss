@@ -7,3 +7,15 @@
   left: 0;
   right: 0;
 }
+
+.sidenav-container--modal-drawer {
+  z-index: unset;
+
+  ::ng-deep .mat-drawer-backdrop {
+    z-index: 5;
+  }
+
+  ::ng-deep .mat-sidenav-fixed {
+    z-index: 6;
+  }
+}
