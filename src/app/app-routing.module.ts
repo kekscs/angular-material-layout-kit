@@ -9,7 +9,6 @@ import { Layout203Component } from "./layouts/layout203/layout203.component";
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
-import { DummyContentComponent } from "./pages/dummy-content/dummy-content.component";
 import { Layout101Page } from "./pages/layout101/layout101.page";
 import { Layout203Page } from "./pages/layout203/layout203.page";
 
