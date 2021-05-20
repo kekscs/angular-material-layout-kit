@@ -23,7 +23,7 @@ export class Layout203Component implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('snavContent')
   snavContent!: MatSidenavContent
 
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = Array.from({length: 3}, (_, i) => `Nav Item ${i + 1}`);
 
   constructor(
     changeDetectorRef: ChangeDetectorRef,

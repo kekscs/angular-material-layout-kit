@@ -52,8 +52,22 @@
         [style.marginTop.px]="mobileQuery.matches ? null : 64"
         [fixedInViewport]="mobileQuery.matches"
         [opened]="!mobileQuery.matches">
-        <div *ngFor="let nav of fillerNav">
-          <a routerLink=".">{{nav}}</a>
+        <div class="sidenav-content-container">
+          <div class="pseudo-title sidenav-item" style="width: 80%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 55%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 65%"></div>
+
+          <mat-divider></mat-divider>
+
+          <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
+
+          <mat-divider></mat-divider>
+
+          <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 40%"></div>
+          <div class="pseudo-title sidenav-item" style="width: 75%"></div>
         </div>
       </mat-sidenav>
 
