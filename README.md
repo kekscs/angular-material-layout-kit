@@ -25,7 +25,7 @@ The idea here is to provide ready to use Angular templates with typical [Materia
 
 ### Option 1: Copy layout code to an existing Angular app
 
-#### Adding Material Design Components for Web
+#### Step 1: Add MDC-Web
 
 1. Run `yarn add material-components-web` or `npm install material-components-web`. The package includes all MDC components/APIs. Don't worry,
 only necessary parts will be bundled into your application.
@@ -40,7 +40,7 @@ only necessary parts will be bundled into your application.
 6. What about Roboto font and Material icons? These components are optional, only if used.
 
 
-#### Copy layout code
+#### Step 2: Copy layout code
 
 1. Clone the repo, or download the latest version from [Releases](https://github.com/kekscs/angular-material-layout-kit/releases).
 2. Copy the necessary layout component files to your app. Layouts can be found in [/src/app/layouts](https://github.com/kekscs/angular-material-layout-kit/tree/master/src/app/layouts) folder.
