@@ -31,52 +31,56 @@
           <mat-icon>more_vert</mat-icon>
         </button>
 
-        <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
         <mat-menu #moreMenu="matMenu">
-          <button mat-menu-item>Settings</button>
+          <button mat-menu-item><span class="pseudo-text-line" style="width: 140px"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <!-- <button mat-menu-item>Settings</button>
           <button mat-menu-item>Send Feedback</button>
           <button mat-menu-item>Help</button>
           <button mat-menu-item>Terms of service</button>
-          <button mat-menu-item>Privacy policy</button>
+          <button mat-menu-item>Privacy policy</button> -->
         </mat-menu>
       </section>
     </div>
   </header>
-  <!-- <div class="mdc-top-app-bar--fixed-adjust"> -->
-    <mat-sidenav-container
-      [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches"
-      [class.sidenav-container--modal-drawer]="mobileQuery.matches">
-      <mat-sidenav
-        #snav
-        [mode]="mobileQuery.matches ? 'over' : 'side'"
-        [style.marginTop.px]="mobileQuery.matches ? null : 64"
-        [fixedInViewport]="mobileQuery.matches"
-        [opened]="!mobileQuery.matches">
-        <div class="sidenav-content-container">
-          <div class="pseudo-title sidenav-item" style="width: 80%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 70%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 75%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 55%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 65%"></div>
 
-          <mat-divider></mat-divider>
+  <mat-sidenav-container
+    [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches"
+    [class.sidenav-container--modal-drawer]="mobileQuery.matches">
+    <mat-sidenav
+      #snav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [style.marginTop.px]="mobileQuery.matches ? null : 64"
+      [fixedInViewport]="mobileQuery.matches"
+      [opened]="!mobileQuery.matches">
+      <div class="sidenav-content-container">
+        <div class="pseudo-title sidenav-item" style="width: 80%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 55%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 65%"></div>
 
-          <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
+        <mat-divider></mat-divider>
 
-          <mat-divider></mat-divider>
+        <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
 
-          <div class="pseudo-title sidenav-item" style="width: 70%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 40%"></div>
-          <div class="pseudo-title sidenav-item" style="width: 75%"></div>
-        </div>
-      </mat-sidenav>
+        <mat-divider></mat-divider>
 
-      <mat-sidenav-content #snavContent
-        [class.mdc-top-app-bar--fixed-adjust]="mobileQuery.matches">
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  <!-- </div> -->
+        <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 40%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content #snavContent
+      [class.mdc-top-app-bar--fixed-adjust]="mobileQuery.matches">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 
 </div>
 
