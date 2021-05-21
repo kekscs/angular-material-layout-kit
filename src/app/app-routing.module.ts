@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Layouts
-import { AppLayoutComponent } from "./layouts/app-layout/app-layout.component";
-import { Layout101Component } from "./layouts/layout101/layout101.component";
-import { Layout203Component } from "./layouts/layout203/layout203.component";
-
+import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
+import { Layout101Component } from './layouts/layout101/layout101.component';
+import { Layout203Component } from './layouts/layout203/layout203.component';
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
-import { Layout101Page } from "./pages/layout101/layout101.page";
-import { Layout203Page } from "./pages/layout203/layout203.page";
+import { Layout101Page } from './pages/layout101/layout101.page';
+import { Layout203Page } from './pages/layout203/layout203.page';
+
 
 const routes: Routes = [
   {
