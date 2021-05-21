@@ -23,9 +23,10 @@ The idea here is to provide ready to use Angular templates with typical [Materia
 
 ## Usage
 
-### Copy layout code to an existing Angular app
+### Option 1: Copy layout code to an existing Angular app
 
-Adding _Material Design Components for Web_:
+#### Adding Material Design Components for Web
+
 1. Run `yarn add material-components-web` or `npm install material-components-web`. The package includes all MDC components/APIs. Don't worry,
 only necessary parts will be bundled into your application.
 2. Somewhere in your application create a file - _material-components-web/styles.scss_. Usually it goes to the folder _/src/vendor/_.
@@ -39,7 +40,8 @@ only necessary parts will be bundled into your application.
 6. What about Roboto font and Material icons? These components are optional, only if used.
 
 
-Steps:
+#### Copy layout code
+
 1. Clone the repo, or download the latest version from [Releases](https://github.com/kekscs/angular-material-layout-kit/releases).
 2. Copy the necessary layout component files to your app. Layouts can be found in [/src/app/layouts](https://github.com/kekscs/angular-material-layout-kit/tree/master/src/app/layouts) folder.
 3. Import layout into your _src/app/app-routing.module.ts_ file:
@@ -58,7 +60,7 @@ import { Layout101Component } from './layouts/layout101/layout101.component'
 ```
 
 
-### Use **angular-material-layout-kit** as a starter template
+### Option 2: Use **angular-material-layout-kit** as a starter template
 
 Go to [Releases](https://github.com/kekscs/angular-material-layout-kit/releases), download the latest version and unpack it. Rename the folder, change package name. Use it as a starting point for your new web app:
 
