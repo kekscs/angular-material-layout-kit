@@ -6,10 +6,30 @@
         <h3 class="mat-display-1 mdx-mb--3">Layout #203</h3>
         <div class="rich-text mdx-mb--5 mat-typography">
           <ul>
-            <li><strong>Key Components:</strong>&nbsp; Toolbar, <a href="https://material.io/components/app-bars-top" target="_blank">Sidenav</a></li>
+            <li>
+              <strong>Key Components:</strong>&nbsp; <a href="https://material.io/components/app-bars-top/web" target="_blank">@material/top-app-bar</a>,
+               <a href="https://material.io/components/app-bars-top" target="_blank">Sidenav</a>
+            </li>
+            <li>
+              <strong>Behavior:</strong> In desktop mode, top app bar and drawer are always visible. Only content scrolls.<br>
+
+              In tablet/phone modes, drawer is hidden to maximize space available for content. It can be revealed by clicking the menu icon in top app bar.
+              Also top app bar is not fixed anymore. Scrolling upward hides the top app bar, scrolling downward reveals the top app bar,
+              thus freeing even more space for content.
+            </li>
           </ul>
         </div>
       </mat-card-content>
+      <mat-card-footer class="mdx-p--2 text-center color-secondary-text">
+        <div>
+          <span class="material-icons mdx-mr--1">desktop_windows</span>
+          <span class="material-icons mdx-mr--1">tablet_android</span>
+          <span class="material-icons mdx-mr--1">smartphone</span>
+        </div>
+        <div class="mat-caption">
+          Check it out on desktop, tablet and phone.
+        </div>
+      </mat-card-footer>
     </mat-card>
   </div>
 

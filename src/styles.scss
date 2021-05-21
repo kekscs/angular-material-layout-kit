@@ -22,6 +22,15 @@ body {
   background-color: theme.$mat-light-background;
 }
 
+$color-secondary-text: #6F7B81;
+
+.color-secondary-text {
+  color: $color-secondary-text;
+}
+
+.text-center {
+  text-align: center;
+}
 
 .card-container {
   margin: 0 auto 24px auto;
