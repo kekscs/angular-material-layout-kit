@@ -2,6 +2,8 @@
 
 **Popular layouts for Material Design web applications.**
 
+\[ [Vue version](https://github.com/kekscs/vue-material-layout-kit) \]
+
 The idea here is to provide ready to use Angular templates with typical [Material Design](https://material.io/) layout and navigational components.
 
 <p align="center">
