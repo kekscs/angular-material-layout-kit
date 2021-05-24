@@ -7,7 +7,7 @@ import { Layout101Component } from './layouts/layout101/layout101.component';
 import { Layout203Component } from './layouts/layout203/layout203.component';
 
 // Pages
-import { HomeComponent } from './pages/home/home.component';
+import { HomePage } from './pages/home/home.page';
 import { Layout101Page } from './pages/layout101/layout101.page';
 import { Layout203Page } from './pages/layout203/layout203.page';
 
@@ -18,7 +18,7 @@ const routes: Routes = [
     component: AppLayoutComponent,
     pathMatch: 'full',
     children: [
-      { path: '', component: HomeComponent }
+      { path: '', component: HomePage }
     ]
   },
   {
