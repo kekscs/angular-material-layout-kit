@@ -1,0 +1,24 @@
+<header #topAppBarEl class="mdc-top-app-bar mdc-elevation--z3">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <a to="/" class="mdc-top-app-bar__title mdc-top-app-bar__title--first">
+        <span class="mdx-d--none-phone">Material Design</span> Layout Kit (Angular)
+      </a>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <a mat-button
+        href="https://github.com/keks-code/angular-material-layout-kit"
+        class="mdc-top-app-bar__action-item button">
+        <mat-icon svgIcon="github" class="mat-button__icon"></mat-icon>
+        <span>GitHub</span>
+      </a>
+    </section>
+  </div>
+</header>
+<div class="mdc-top-app-bar--fixed-adjust">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+

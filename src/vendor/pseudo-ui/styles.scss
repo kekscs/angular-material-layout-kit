@@ -1,0 +1,7 @@
+@use './pseudo-avatar';
+@use './pseudo-text';
+@use './pseudo-paragraph';
+
+@include pseudo-avatar.core-styles();
+@include pseudo-text.core-styles();
+@include pseudo-paragraph.core-styles();

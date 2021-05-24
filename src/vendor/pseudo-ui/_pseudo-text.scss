@@ -1,0 +1,25 @@
+@use './vars' as vars;
+
+%pseudo-text {
+  display: inline-block;
+  background-color: vars.$text-color;
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+@mixin core-styles() {
+  .pseudo-title {
+    @extend %pseudo-text;
+    height: 24px;
+
+    &--darker {
+      background-color: vars.$darker-text-color;
+    }
+  }
+
+  .pseudo-text-line {
+    @extend %pseudo-text;
+    height: 14px;
+  }
+}

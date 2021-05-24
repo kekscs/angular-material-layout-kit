@@ -1,0 +1,24 @@
+@use 'src/styles/themes/default' as theme;
+
+.card-link {
+  display: block;
+  text-decoration: none;
+
+  ::ng-deep .mat-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+
+  ::ng-deep .mat-card-content {
+    text-align: center;
+  }
+}
+
+.card-divider {
+  width: 40%;
+  height: 7px;
+  margin: 15px auto;
+  background-color: theme.mat-mat-color(theme.$mat-theme-accent);
+}

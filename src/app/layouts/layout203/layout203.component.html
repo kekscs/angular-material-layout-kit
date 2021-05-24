@@ -1,0 +1,95 @@
+<div class="layout-container">
+  <header
+    #topAppBarEl
+    [class.mdc-top-app-bar--fixed]="!mobileQuery.matches"
+    class="mdc-top-app-bar mdc-elevation--z3">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button
+          mat-icon-button
+          (click)="snav.toggle()"
+          class="mdc-top-app-bar__navigation-icon mdx-d--none-desktop">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="mdc-top-app-bar__title">
+          <span class="mdx-d--none-phone">App</span> Layout #203
+        </span>
+      </section>
+
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <a mat-button
+          *ngIf="!phoneQuery.matches"
+          routerLink="/"
+          class="mdc-top-app-bar__action-item">
+          <mat-icon class="mat-button__icon">home</mat-icon>
+          <span>Home</span>
+        </a>
+        <a mat-icon-button
+          *ngIf="phoneQuery.matches"
+          routerLink="/"
+          class="mdc-top-app-bar__action-item">
+          <mat-icon>home</mat-icon>
+        </a>
+
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="moreMenu"
+          class="mdc-top-app-bar__action-item">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #moreMenu="matMenu">
+          <button mat-menu-item><span class="pseudo-text-line" style="width: 140px"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <button mat-menu-item><span class="pseudo-text-line"></span></button>
+          <!-- <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Send Feedback</button>
+          <button mat-menu-item>Help</button>
+          <button mat-menu-item>Terms of service</button>
+          <button mat-menu-item>Privacy policy</button> -->
+        </mat-menu>
+      </section>
+    </div>
+  </header>
+
+  <mat-sidenav-container
+    [class.mdc-top-app-bar--fixed-adjust]="!mobileQuery.matches"
+    [class.sidenav-container--modal-drawer]="mobileQuery.matches">
+    <mat-sidenav
+      #snav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [style.marginTop.px]="mobileQuery.matches ? null : 64"
+      [fixedInViewport]="mobileQuery.matches"
+      [opened]="!mobileQuery.matches">
+      <div class="sidenav-content-container">
+        <div class="pseudo-title sidenav-item" style="width: 80%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 55%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 65%"></div>
+
+        <mat-divider></mat-divider>
+
+        <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
+
+        <mat-divider></mat-divider>
+
+        <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 40%"></div>
+        <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content #snavContent
+      [class.mdc-top-app-bar--fixed-adjust]="mobileQuery.matches">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+</div>
+
+
