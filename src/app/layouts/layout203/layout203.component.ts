@@ -4,7 +4,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { MatSidenavContent } from '@angular/material/sidenav';
 
 @Component({
-  selector: 'app-layout203',
   templateUrl: './layout203.component.html',
   styleUrls: ['./layout203.component.scss']
 })

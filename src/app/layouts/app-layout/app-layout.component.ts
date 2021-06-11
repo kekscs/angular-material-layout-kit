@@ -12,7 +12,6 @@ const GITHUB_ICON = `
 
 
 @Component({
-  selector: 'app-layout',
   templateUrl: './app-layout.component.html',
   styleUrls: ['./app-layout.component.scss']
 })
