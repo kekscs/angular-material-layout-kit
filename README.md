@@ -27,7 +27,9 @@ The idea here is to provide ready to use Angular templates with typical [Materia
 
 ### Option 1: Copy layout code to an existing Angular app
 
-#### Step 1: Add MDC-Web
+#### Step 1: Add MDC-Web (optional)
+
+This step is optional. You only need to do it if target layout uses any MDC-Web component. See layout description for a list of used components.
 
 1. Run `yarn add material-components-web` or `npm install material-components-web`. The package includes all MDC components/APIs. Don't worry,
 only necessary parts will be bundled into your application.
@@ -46,11 +48,12 @@ only necessary parts will be bundled into your application.
 
 1. Clone the repo, or download the latest version from [Releases](https://github.com/kekscs/angular-material-layout-kit/releases).
 2. Copy the necessary layout component files to your app. Layouts can be found in [/src/app/layouts](https://github.com/kekscs/angular-material-layout-kit/tree/master/src/app/layouts) folder.
-3. Import layout into your _src/app/app-routing.module.ts_ file:
+3. Add layout component to target module declarations. Usually you need to import layout component into your `app.module.ts` and add it to `declarations` array.
+4. Use layout in you routing. Usually you need to import layout into your `src/app/app-routing.module.ts` file:
 ```ts
 import { Layout101Component } from './layouts/layout101/layout101.component'
 ```
-4. Configure layout for a route like this:
+5. Set the layout for a route like this:
 ```ts
   {
     path: 'home',
@@ -60,6 +63,7 @@ import { Layout101Component } from './layouts/layout101/layout101.component'
     ]
   }
 ```
+6. Don't forget to import modules of Angular Material components, used in the layout.
 
 
 ### Option 2: Use **angular-material-layout-kit** as a starter template
