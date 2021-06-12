@@ -1,0 +1,49 @@
+<mat-sidenav-container
+  class="layout-container"
+  [class.sidenav-container--modal-drawer]="mobileQuery.matches">
+  <mat-sidenav
+    #snav
+    [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [fixedInViewport]="mobileQuery.matches"
+    [opened]="!mobileQuery.matches">
+    <div class="sidenav-content-container">
+      <div class="pseudo-title sidenav-item" style="width: 80%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 55%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 65%"></div>
+
+      <mat-divider></mat-divider>
+
+      <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
+
+      <mat-divider></mat-divider>
+
+      <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 40%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        (click)="snav.toggle()"
+        class="mdx-d--none-desktop">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span>My Application</span>
+
+      <span class="toolbar-spacer"></span>
+
+      <a mat-button
+        routerLink="/">
+        <mat-icon class="mat-button__icon">home</mat-icon>
+        <span>Home</span>
+      </a>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

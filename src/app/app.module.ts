@@ -15,6 +15,7 @@ import { HomePage } from './pages/home/home.page';
 import { DummyPageContentComponent } from './components/dummy-page-content/dummy-page-content.component';
 import { Layout101Page } from './pages/layout101/layout101.page';
 import { Layout203Page } from './pages/layout203/layout203.page';
+import { Layout202Page } from './pages/layout202/layout202.page';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { Layout203Page } from './pages/layout203/layout203.page';
     DummyPageContentComponent,
     Layout101Page,
     Layout203Page,
+    Layout202Page,
   ],
   imports: [
     BrowserModule,

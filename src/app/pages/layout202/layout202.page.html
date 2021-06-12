@@ -1,0 +1,43 @@
+<div class="a-c--1280 mdx-p--default">
+
+  <div class="card-container">
+    <mat-card>
+      <mat-card-content>
+        <h3 class="mat-display-1 mdx-mb--3">Layout #202</h3>
+        <div class="rich-text mdx-mb--5 mat-typography">
+          <ul>
+            <li>
+              <strong>Key Components:</strong>&nbsp; <a href="https://material.angular.io/components/toolbar" target="_blank">Toolbar</a>,
+               <a href="https://material.angular.io/components/sidenav" target="_blank">Sidenav</a>. This version of layout #202 doesn't
+               use MDC Web's <a href="https://material.io/components/app-bars-top/web" target="_blank">@material/top-app-bar</a>.
+               Therefore scrolling downward <strong>doesn't</strong> reveal the top app bar. I plan to create another version of this layout
+               using <i>@material/top-app-bar</i>.
+            </li>
+            <li>
+              <strong>Behavior:</strong> In desktop mode, drawer (or sidenav) is always visible. Top app bar gets scrolled together with content.<br>
+
+              In tablet/phone modes, drawer is hidden to maximize space available for content. It can be revealed by clicking the menu icon in top app bar.
+              <ul>
+                <li>Properly handled scrolling of main content when modal drawer is opened. In tablet/phone modes, when modal drawer is opened,
+                  main content behind doesn't scroll.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </mat-card-content>
+      <mat-card-footer class="mdx-p--2 text-center color-secondary-text">
+        <div>
+          <span class="material-icons mdx-mr--1">desktop_windows</span>
+          <span class="material-icons mdx-mr--1">tablet_android</span>
+          <span class="material-icons mdx-mr--1">smartphone</span>
+        </div>
+        <div class="mat-caption">
+          Check it out on desktop, tablet and phone.
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+
+  <dummy-page-content></dummy-page-content>
+
+</div>

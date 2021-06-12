@@ -3,7 +3,6 @@ import { MDCTopAppBar } from '@material/top-app-bar';
 
 
 @Component({
-  selector: 'app-layout101',
   templateUrl: './layout101.component.html',
   styleUrls: ['./layout101.component.scss']
 })
