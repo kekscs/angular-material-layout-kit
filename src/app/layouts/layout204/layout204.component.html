@@ -1,0 +1,46 @@
+<mat-sidenav-container
+  class="layout-container sidenav-container--modal-drawer">
+  <mat-sidenav
+    #snav
+    mode="over"
+    fixedInViewport>
+    <div class="sidenav-content-container">
+      <div class="pseudo-title sidenav-item" style="width: 80%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 55%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 65%"></div>
+
+      <mat-divider></mat-divider>
+
+      <div *ngFor="let nav of fillerNav" class="pseudo-title sidenav-item" style="width: 85%"></div>
+
+      <mat-divider></mat-divider>
+
+      <div class="pseudo-title sidenav-item" style="width: 70%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 40%"></div>
+      <div class="pseudo-title sidenav-item" style="width: 75%"></div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        (click)="snav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span>My Application</span>
+
+      <span class="mat-toolbar-spacer"></span>
+
+      <a mat-button
+        routerLink="/">
+        <mat-icon class="mat-button__icon">home</mat-icon>
+        <span>Home</span>
+      </a>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
