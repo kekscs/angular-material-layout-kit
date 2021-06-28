@@ -14,6 +14,7 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { Layout101Component } from './layout101/layout101.component';
 import { Layout202Component } from './layout202/layout202.component';
 import { Layout203Component } from './layout203/layout203.component';
+import { Layout204Component } from './layout204/layout204.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Layout203Component } from './layout203/layout203.component';
     AppLayoutComponent,
     Layout101Component,
     Layout202Component,
-    Layout203Component
+    Layout203Component,
+    Layout204Component,
   ],
   imports: [
     CommonModule,

@@ -1,11 +1,9 @@
 <mat-sidenav-container
-  class="layout-container"
-  [class.sidenav-container--modal-drawer]="mobileQuery.matches">
+  class="layout-container sidenav-container--modal-drawer">
   <mat-sidenav
     #snav
-    [mode]="mobileQuery.matches ? 'over' : 'side'"
-    [fixedInViewport]="mobileQuery.matches"
-    [opened]="!mobileQuery.matches">
+    mode="over"
+    fixedInViewport>
     <div class="sidenav-content-container">
       <div class="pseudo-title sidenav-item" style="width: 80%"></div>
       <div class="pseudo-title sidenav-item" style="width: 70%"></div>
@@ -28,8 +26,7 @@
     <mat-toolbar color="primary">
       <button
         mat-icon-button
-        (click)="snav.toggle()"
-        class="mdx-d--none-desktop">
+        (click)="snav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
 
