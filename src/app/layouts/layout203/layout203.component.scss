@@ -37,3 +37,8 @@
   display: block;
   margin-bottom: 24px;
 }
+
+.layout-sidenav-container {
+  flex: 1 0 auto;
+  max-height: 100%;
+}
