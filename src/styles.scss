@@ -9,7 +9,7 @@
 @use './vendor/pseudo-ui/styles' as pseudi-ui;
 //@import './styles/themes/default/mat/styles';       //this import adds styles
 //@use './styles/themes/default/mat/theme-vars' as mat-vars;
-@use '~mdc-utility-styles/dist/mdc-utility-styles';
+@use 'material-spirit/src/material-spirit';
 
 
 @include theme.core-styles();
