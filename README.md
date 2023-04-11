@@ -82,6 +82,7 @@ yarn build
 ```
 
 
-
+## Other Material-Influenced Projects
+* [Angular Material Split-Button](https://github.com/material-spirit/ngx-split-button)
 
 
