@@ -1,7 +1,8 @@
+@use '~@angular/material' as mat;
 @use '../material-angular/theme-vars' as mat-theme-vars;
 
 @use "@material/theme" with (
-  $primary: mat-theme-vars.mat-color(mat-theme-vars.$theme-primary),
+  $primary: mat-theme-vars.mat.get-color-from-palette(mat-theme-vars.$theme-primary),
   $secondary: #F08A81,
   $background: #141619,
   $surface: #1E2023,

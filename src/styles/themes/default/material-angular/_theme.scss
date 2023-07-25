@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @use './theme-vars' as *;
 
 // Fonts
@@ -7,7 +8,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 
   // Compute font config
-  @include mat-core($fontConfig);
+  @include mat.core($fontConfig);
 
   // Theme Config
 
@@ -39,10 +40,10 @@
   }
 
   // Theme Init
-  @include angular-material-theme($theme);
+  @include mat.all-component-themes($theme);
 
   .theme-alternate {
-    @include angular-material-theme($altTheme);
+    @include mat.all-component-themes($altTheme);
   }
 
   // Specific component overrides, pieces that are not in line with the general theming
