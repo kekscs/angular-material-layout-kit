@@ -7,7 +7,7 @@
 The idea here is to provide ready to use Angular templates with typical [Material Design](https://material.io/) layout and navigational components.
 
 <p align="center">
-  <a href="http://angular-layouts.keks-code.com/" target="_blank">
+  <a href="https://material-spirit.github.io/angular-material-layout-kit/" target="_blank">
     <img src="https://kekscs.blob.core.windows.net/dev/material-layout-kit/demo-btn.png" alt="DEMO" title="DEMO">
   </a>
 </p>
