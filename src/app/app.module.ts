@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 // *** Angular Material
 import { MatDividerModule } from '@angular/material/divider';
@@ -32,7 +31,6 @@ import { Layout204Page } from './pages/layout204/layout204.page';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
     MatDividerModule,
     MatCardModule,
     AppRoutingModule,
